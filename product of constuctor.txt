@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class product
+{
+   int a;
+   double b,p;
+   product(int x)     
+   {
+      a=12;      
+      b=15;      
+   }
+   product()
+   {
+      a=b=x;
+   }
+   product(int x,double y)
+   {
+      a=x;
+      b=y;
+   }
+   void multiply()
+   {
+      p=a*b;
+      System.out.println("Product is:"+p);
+   }
+}
+public class sample 
+{
+   public static void main(String args[])
+   {
+      product p1=new product(10,4.5);
+      product p2=new product (15);   //product p2=p1;
+      product p3=new product();
+      p1.multiply();
+      p2.multiply();
+      p3.multiply();
+   }
+}
